@@ -1,0 +1,318 @@
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+
+:root {
+--rgb: rgb(255, 253, 253); 
+--green: #357b70;
+--tosca: #05676e;
+--lightgreen:#489c79;
+--yellow: #e6c276;
+--dark-grey: #2b2b2b;
+--black: rgba(0, 0, 0, 0.3);
+--light-gray:  lightgray;
+--white: white;
+--rgba: rgba(0, 0, 0, 0.3);
+--dark-yellow: #edc655;
+--light-yellow:  #fcffad;
+--orange: #f76414;
+--font-family: inherit;
+--font-family-body: "Lato", sans-serif;
+--font-weight: 700;
+
+}
+
+
+
+body {
+  background-color: var(--rgb); 
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+
+} 
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-weight);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight);
+}
+a {
+    color: var(--green);
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  a:visited {
+    color: var(--tosca)
+  }
+  
+  a:active {
+    color: var(--lightgreen);
+  }
+ .button {
+    border: none;
+    font-family: var(--font-family);
+    background-color: var(--yellow);
+      color: var(--dark-grey);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    opacity: 0.8;
+  }
+    .button__secondary {
+      background-color: var(--yellow);
+      color: var(--dark-grey);
+    }
+   
+  .navigation-list__item--active {
+    text-decoration: none;
+      }
+
+    .profile__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .profile {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+    .profile__portrait {
+        float: left;
+        width: 250px;
+        margin-right: 40px;
+        border-radius: 50%;
+      }
+
+    .profile__text {
+    flex: 1 1 100px;
+    }
+
+    .page-footer {
+    clear: both;
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+      }
+
+  * {
+    box-sizing: border-box;
+      }
+
+    .page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+      }
+
+    .page-header__item {
+    flex: 0 1 200px;
+    align-items: center;
+      }
+
+   .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+      }
+
+    .navigation-list {
+    list-style-type: none;
+      }
+
+   .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+      }
+
+    @media all and (max-width: 500px) {
+    .grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+      }
+
+    .grid__item {
+    background-color: var(--light-gray);
+    width: auto;
+     } 
+    } 
+
+    @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 300px 300px;
+   
+        }
+    .grid__item {
+      background-color: var(--light-gray);
+      width: auto;
+       } 
+      } 
+    
+    @media all and (max-width: 750px) {
+      .grid {
+          display: grid;
+          grid-template-columns: 300px 300px 300px;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 300px 300px;
+            }
+      .grid__item {
+          background-color: var(--light-gray);
+          width: auto;
+           } 
+      .grid__item:last-child {
+          grid-column: auto / auto;
+          grid-row: auto / auto;
+          }
+          h1 {
+            font-size: 22px;
+          }
+        } 
+
+        .button, button {
+          /* overwrites browser defaults and resets the border */
+            border: none;
+            display: inline-block;
+            /* takes the font from the outer container */
+            font-family: var(--font-family);
+            /* styles the button */
+            background-color: var(--green);
+            color: var(--white);
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 3px;
+            /* width of the border, type, color */
+            border-bottom: 2px solid var(--rgba);
+            transition-duration: 0.2s;
+            transition-property: opacity;
+        } 
+
+        button:hover,
+        .button:hover {
+        background-color: var(--yellow);
+      } 
+      
+        button:hover,
+        button:focus,
+        .button:hover
+        .button:focus {
+          /* lets the mouse appear as a hand when hovering over the button */
+          cursor: pointer;
+          /* reduces the opacity of the button to 80% */
+          opacity: 0.8s;
+        }
+
+  .about__page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: center;
+      width: 400px;
+      margin: 0 auto;
+      flex: 0 1 200px;
+
+    }
+
+  .about__description {
+        max-width: 700px;
+        margin: 0 auto;
+        flex: 0 1 200px;
+        align-items: center;
+      }
+
+
+  @keyframes color-change {
+    0% {
+      fill: var(--dark-yellow);
+    }
+    50% {
+      fill:var(--light-yellow);
+    }
+    100% {
+      fill: var(--orange);
+    }
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  font-family: var(--font-family);
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+  border-bottom: 2px solid var(--rgba);
+}
+
+.button {
+  background-color: var(--green);
+}
+:root {
+  --primary-color: var(--green);
+  --secondary-color: var(--dark-yellow);
+  --dark-grey: var(--dark-grey);
+}
+a {
+  color: var(--primary-color);
+}
