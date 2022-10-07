@@ -89,8 +89,9 @@ a {
       display: flex;
       align-items: center;
       justify-content: center;
+  
+      }
 
-    }
 
     .profile {
         max-width: 700px;
@@ -109,10 +110,14 @@ a {
     }
 
     .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction:column;
-    text-align:center;
+      clear: both;
+      display: flex;
+      flex-direction:column;
+      text-align:center;
+      position: absolut;
+      width: 100%;
+      bottom: 0;
+      padding: 2em;
       }
 
   * {
