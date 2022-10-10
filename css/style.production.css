@@ -68,10 +68,13 @@ Secondary Color (Orange): #e0b354;
         color: #2b2b2b;
       }
      
-    .navigation-list__item--active {
+    .navigation-list__item {
       text-decoration: none;
         }
-  
+    .navigation-list__item--active {
+      text-decoration: underline;
+        }
+
       .profile__container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -88,6 +91,7 @@ Secondary Color (Orange): #e0b354;
       .profile {
           max-width: 700px;
           margin: 0 auto;
+          padding: 20px;
         }
   
       .profile__portrait {
@@ -102,19 +106,26 @@ Secondary Color (Orange): #e0b354;
           -ms-flex: 1 1 100px;
               flex: 1 1 100px;
       }
-  
-      .page-footer {
-      clear: both;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient:vertical;
-      -webkit-box-direction:normal;
-          -ms-flex-direction:column;
-              flex-direction:column;
-      text-align:center;
-        }
-  
+
+        .page-footer {
+          clear: both;
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient:vertical;
+          -webkit-box-direction:normal;
+              -ms-flex-direction:column;
+                  flex-direction:column;
+          text-align:center;
+            }
+
+    .social-media {
+      width: fit-content;
+      margin: 0 auto;
+
+  }
+
     * {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -125,10 +136,13 @@ Secondary Color (Orange): #e0b354;
       display: -ms-flexbox;
       display: flex;
       width: 100%;
-      padding: 20px;
+      padding: 10px;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
         }
   
       .page-header__item {
@@ -148,7 +162,7 @@ Secondary Color (Orange): #e0b354;
         }
   
       .navigation-list {
-      list-style-type: none;
+      list-style-type: under;
         }
   
      .navigation-list li {
@@ -219,13 +233,15 @@ Secondary Color (Orange): #e0b354;
       .grid__item {
       background-color: lightgray;
       width: auto;
+      padding: 10px;
        } 
       } 
   
-      @media all and (min-width: 500px) and (max-width: 750px) {
       .grid {
         display: -ms-grid;
         display: grid;
+        row-gap: 50px;
+        column-gap: 50px;
         -ms-grid-columns: 300px 300px 300px;
         grid-template-columns: 300px 300px 300px;
         -ms-grid-columns: 1fr 1fr 1fr;
@@ -297,8 +313,9 @@ Secondary Color (Orange): #e0b354;
       .grid__item {
         background-color: lightgray;
         width: auto;
+        padding: 10px;
          } 
-        } 
+        
       
       @media all and (max-width: 750px) {
         .grid {
@@ -362,6 +379,7 @@ Secondary Color (Orange): #e0b354;
         .grid__item {
             background-color: lightgray;
             width: auto;
+            padding: 10px;
              } 
         .grid__item:last-child {
             grid-column: auto / auto;
@@ -434,6 +452,10 @@ Secondary Color (Orange): #e0b354;
             opacity: 0.8s;
           }
   
+    .contact {
+      padding: 20px;
+    }     
+
     .about__page {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -450,6 +472,7 @@ Secondary Color (Orange): #e0b354;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 200px;
                 flex: 0 1 200px;
+        padding: 20px;
   
       }
   
@@ -462,6 +485,7 @@ Secondary Color (Orange): #e0b354;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
+          padding: 20px;
         }
   
   
@@ -582,4 +606,7 @@ Secondary Color (Orange): #e0b354;
   }
   a {
     color: #357b70;
+  }
+  .work {
+    padding: 20px;
   }
