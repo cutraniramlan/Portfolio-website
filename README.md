@@ -1,6 +1,6 @@
 # Portfolio-website
 
-Portfolio website built in Javascript
+Portfolio website built in HTML
 
 This was a website built during my study at CareerFoundry to showcase my technical skills, web development skills.
 
