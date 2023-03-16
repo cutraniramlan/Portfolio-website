@@ -114,12 +114,17 @@ a {
     }
     
     .social-media {
-      display: flex;
-      justify-content: space-between;
-      width: 150px;
-      margin: 0 auto;
-    }
-
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
+}
+.contact {
+  float:center;
+  width: 400px;
+  margin-right: 50px;
+  border-radius: 60%;
+}
   .logofooter {
     display: flex;
     width: 50%;
@@ -173,12 +178,14 @@ a {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    background-color:rgb(199, 181, 159);
+    width:auto;
       }
 
     .grid__item {
-    background-color: var(--light-pink);
-    width: auto;
+    background-color:rgb(199, 181, 159);
+    width:auto;
      } 
     } 
 
