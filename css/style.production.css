@@ -169,6 +169,11 @@ Secondary Color (Orange): #e0b354;
       display: inline-block;
       margin-left: 15px;
         }
+
+      .background-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
   
       @media all and (max-width: 500px) {
       .grid {
@@ -231,7 +236,7 @@ Secondary Color (Orange): #e0b354;
         }
   
       .grid__item {
-      background-color: lightgray;
+      background-color: rgb(189, 164, 89);
       width: auto;
       padding: 10px;
        } 
